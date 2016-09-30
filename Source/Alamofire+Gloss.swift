@@ -49,8 +49,12 @@ public extension Alamofire.Request {
         return .Failure(errz)
       }
       
-      let result = [T].fromJSONArray(json)
-      return .Success(result)
+        if let result = [T].fromJSONArray(json) {
+            return .Success(result)
+        }
+        
+        let errz = NSError(domain: AlamoFireGloss_ErrDomain, code: AlamoFireGloss_ErrCode, userInfo: ["data": "Could not create objecs from JSON: \(json)"])
+        return .Failure(errz)
     }
   }
   
