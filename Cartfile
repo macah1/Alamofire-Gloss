@@ -1,2 +1,2 @@
-github "hkellaway/Gloss" "swift_2.3"
-github "Alamofire/Alamofire" ~> 3.4
+github "hkellaway/Gloss" == 0.8
+github "Alamofire/Alamofire" ~> 3.5
