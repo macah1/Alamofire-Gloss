@@ -1,2 +1,2 @@
-github "hkellaway/Gloss"
+github "hkellaway/Gloss" "swift_2.3"
 github "Alamofire/Alamofire" ~> 3.4
